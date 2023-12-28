@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from 'react';
 import '../../App.css';
 import'../Navbar.css';
-import ITPROJECTDEVELOPMENT from './ITPROJECTDEVELOPMENT';
+// import ITPROJECTDEVELOPMENT from './ITPROJECTDEVELOPMENT';
 //import ITPROJECTDEVELOPMENT from './components/pages/ITPROJECTDEVELOPMENT';
 
 //import { click } from '@testing-library/user-event/dist/click';
@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { button } from '../Button';
 
 
-function Navbar() {
+function ITPROJECTDEVELOPMENT() {
   const[click, setClick] = useState(false);
   const[button, setButton] =useState(true)
 

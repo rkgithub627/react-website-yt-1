@@ -1,19 +1,37 @@
 import React from 'react';
-//import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Logo from './Logo'; // Ensure this path is correct
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route} from
- 'react-router-dom';
+import ABOUTUS from './components/pages/ABOUTUS';
+import CAREEROPPORTUNITY from './components/pages/CAREEROPPORTUNITY';
+import EMPLOYER from './components/pages/EMPLOYER';
+import ITPROJECTDEVELOPMENT from './components/pages/ITPROJECTDEVELOPMENT';
+import CONTACTUS from './components/pages/CONTACTUS';
+import SignUp from './components/pages/SignUp';
+import Footer from './components/Footer'; // Ensure this path is correct
+import './App.css';
+
 function App() {
   return (
-    <>
-  <Router>
-      <Navbar />
-      <Switch>
-        <Route path='/' exact />
-        </Switch>
-      </Router>
-      </>
+    <Router>
+      <header>
+        <Logo />
+        <Navbar />
+      </header>
+      <Routes>
+        <Route path="/" element={<ABOUTUS />} />
+        <Route path="/CAREEROPPORTUNITY" element={<CAREEROPPORTUNITY />} />
+        <Route path="/EMPLOYER" element={<EMPLOYER />} />
+        <Route path="/ITPROJECTDEVELOPMENT" element={<ITPROJECTDEVELOPMENT />} />
+        <Route path="/CONTACTUS" element={<CONTACTUS />} />
+        <Route path="/SignUp" element={<SignUp />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
   //  <div className="App">
 
    //   <header className="App-header">
@@ -34,7 +52,5 @@ function App() {
       //  </a>
   //    </header>
  //   </div>
-  );
-}
-
-export default App;
+  //);
+//}

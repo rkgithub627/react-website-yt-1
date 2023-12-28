@@ -1,6 +1,6 @@
 //import React from "react";
 import '../../App.css';
-import SIGNUP from './SignUp';
+// import SIGNUP from './SignUp';
 
 
 //import { click } from '@testing-library/user-event/dist/click';
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { button } from '../Button';
 import'../Navbar.css';
 
-function Navbar() {
+function SIGNUP() {
   const[click, setClick] = useState(false);
   const[button, setButton] =useState(true)
 

@@ -3,7 +3,7 @@ import '../../App.css';
 import'../Navbar.css';
 import React, {useEffect, useState} from 'react';
 import { Link } from "react-router-dom";
-import CONTACTUS from './CONTACTUS';
+// import CONTACTUS from './CONTACTUS';
 
 //import CONTACTUS from './components/pages/CONTACTUS';
 import { button } from '../Button';
@@ -12,7 +12,7 @@ import { button } from '../Button';
 
 
 
-function Navbar() {
+function CONTACTUS() {
   const[click, setClick] = useState(false);
   const[button, setButton] =useState(true)
 

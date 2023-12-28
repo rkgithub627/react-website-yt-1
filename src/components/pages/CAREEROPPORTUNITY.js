@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import '../../App.css';
 import '../Navbar.css';
-import CAREEROPPORTUNITY from './CAREEROPPORTUNITY';
+// import CAREEROPPORTUNITY from './CAREEROPPORTUNITY';
 //import '../../CAREEROPPORTUNITY.js';
 //import CAREEROPPORTUNITY from '../components/pages/CAREEROPPORTUNITY.js';
 
@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { button } from '../Button';
 
 
-function Navbar() {
+function CAREEROPPORTUNITY() {
   const[click, setClick] = useState(false);
   const[button, setButton] =useState(true)
 

@@ -1,8 +1,8 @@
 // import React from "react";
 import '../../App.css';
 import'../Navbar.css';
-import'./EMPLOYER.js';
-import EMPLOYER from './EMPLOYER';
+// import'./EMPLOYER.js';
+// import EMPLOYER from './EMPLOYER';
 //import EMPLOYER from './components/pages/EMPLOYER.js';
 
 
@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { button } from '../Button';
 
 
-function Employer() {
+function EMPLOYER() {
   const[click, setClick] = useState(false);
   const[button, setButton] =useState(true)
 
